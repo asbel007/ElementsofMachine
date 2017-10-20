@@ -7,174 +7,169 @@
     android:layout_centerInParent="true"
     android:layout_centerVertical="true"
     android:layout_gravity="center"
-    android:background="#0ff"
     tools:context="drawable.SugerirFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:weightSum="1">
+            android:orientation="vertical">
 
-            <LinearLayout
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.81"
-                android:orientation="horizontal">
-
-                <android.support.design.widget.FloatingActionButton
-                    android:id="@+id/fab"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="top|left"
-                    android:layout_margin="@dimen/fab_margin"
-                    app:backgroundTint="@android:color/holo_blue_light"
-                    app:elevation="2dp"
-                    app:layout_anchor="@+id/include"
-                    app:layout_anchorGravity="top|left"
-                    app:srcCompat="@android:drawable/ic_delete" />
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:weightSum="1">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.81"
+                    android:orientation="horizontal">
 
-                    <TextView
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:backgroundTint="@android:color/holo_blue_light"
+                        app:elevation="2dp"
+                        app:layout_anchor="@+id/include"
+                        app:layout_anchorGravity="top|left"
+                        app:srcCompat="@android:drawable/ic_delete" />
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sugerir Pregunta"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                        android:textColor="#fff" />
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/colorAccent" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_sugerir"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="#fff" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:contentDescription="@string/img"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_menu_gallery"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_menu_gallery"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+            </android.support.v7.widget.Toolbar>
 
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="0dp"
-                    android:background="@android:color/holo_blue_light"
-                    android:text="Opcion" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
 
-            </LinearLayout>
-
-        </android.support.v7.widget.Toolbar>
-
-        <RelativeLayout
-            android:layout_width="363dp"
-            android:layout_height="150dp"
-            android:layout_weight="2">
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="60dp"
-                android:text="Pregunta" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="19dp"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:hint="Pregunta" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/textView1"
-                android:layout_below="@+id/textView1"
-                android:layout_marginTop="130dp"
-                android:text="Respuesta" />
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp">
-
-                <EditText
-                    android:id="@+id/editText10"
+                <TextView
+                    android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Respuesta Correcta"
-                    android:inputType="text"
-                    android:textColorHint="@color/colorPrimary" />
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/texto_pregunta" />
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/editText1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
                     android:ems="10"
-                    android:hint="@string/resp_incorrect"
-                    android:inputType="text" />
+                    android:hint="@string/hint_pregunta"
+                    android:inputType="textMultiLine" />
 
-                <EditText
-                    android:id="@+id/editText12"
+                <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="80dp"
-                    android:ems="10"
-                    android:hint="@string/resp_incorrect"
-                    android:inputType="text" />
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="130dp"
+                    android:text="@string/texto_respuesta" />
 
-                <EditText
-                    android:id="@+id/editText13"
+                <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="120dp"
-                    android:ems="10"
-                    android:hint="@string/resp_incorrect"
-                    android:inputType="text" />
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp">
 
-            </FrameLayout>
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/resp"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/editText11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:ems="10"
+                        android:hint="@string/resp_incorrect"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:ems="10"
+                        android:hint="@string/resp_incorrect"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editText13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="120dp"
+                        android:ems="10"
+                        android:hint="@string/resp_incorrect"
+                        android:inputType="text" />
+
+                </FrameLayout>
 
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-        <Button
-            android:id="@+id/btnCalificar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Calificar"
-            android:textColor="#fff"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="200dp" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnCalificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@android:color/holo_blue_dark"
+                android:text="@string/sugerir"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </FrameLayout>
