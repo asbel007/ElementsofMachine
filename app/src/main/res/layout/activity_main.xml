@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
-
+    <!--Ejemplo de Aporte,1.- abrir github,2. buscar proy y fork, y kuegi oull-->
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
