@@ -48,7 +48,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sugerir Pregunta"
+                        android:text="@string/title_sugerir"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                         android:textColor="#fff" />
 
@@ -59,6 +59,7 @@
                 </LinearLayout>
 
                 <ImageView
+                    android:contentDescription="@string/img"
                     android:layout_width="35dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_menu_gallery"
@@ -70,7 +71,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginBottom="0dp"
                     android:background="@android:color/holo_blue_light"
-                    android:text="Opcion" />
+                    android:text="@string/opc_calificar" />
 
             </LinearLayout>
 
@@ -89,7 +90,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="60dp"
-                android:text="Pregunta" />
+                android:text="@string/texto_pregunta" />
 
             <EditText
                 android:id="@+id/editText1"
@@ -100,7 +101,7 @@
                 android:layout_marginTop="19dp"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:hint="Pregunta" />
+                android:hint="@string/hint_pregunta" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -109,7 +110,7 @@
                 android:layout_alignStart="@+id/textView1"
                 android:layout_below="@+id/textView1"
                 android:layout_marginTop="130dp"
-                android:text="Respuesta" />
+                android:text="@string/texto_respuesta" />
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -123,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Respuesta Correcta"
+                    android:hint="@string/resp"
                     android:inputType="text"
                     android:textColorHint="@color/colorPrimary" />
 
@@ -156,7 +157,6 @@
 
             </FrameLayout>
 
-
         </RelativeLayout>
 
         <Button
@@ -165,8 +165,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
             android:background="@android:color/holo_blue_dark"
-            android:text="Calificar"
-            android:textColor="#fff"
+            android:text="@string/sugerir"
+            android:textColor="@color/textBotonPrymary"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="200dp" />

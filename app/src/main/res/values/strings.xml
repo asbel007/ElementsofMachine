@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MachineElements</string>
-
     <string name="title_activity_main">Elementos de Maquinas</string>
     <string name="title_config">Configuracion</string>
 
@@ -18,5 +17,38 @@
     <string name="item_drawer5">Comunicate</string>
     <string name="item_drawer51">Compartir</string>
     <string name="item_drawer52">Sugerencias</string>
+
+    <!-- Descripcion de las imagenes del ventana principal -->
+    <string name="img1">Descripcion</string>
+    <string name="img2">Descripcion</string>
+    <string name="img3">Descripcion</string>
+    <string name="img4">Descripcion</string>
+    <string name="img5">Descripcion</string>
+    <string name="img6">Descripcion</string>
+    <string name="img7">Descripcion</string>
+    <string name="img8">Descripcion</string>
+    <string name="img9">Descripcion</string>
+    <string name="img10">Descripcion</string>
+    <string name="img11">Descripcion</string>
+    <string name="img12">Descripcion</string>
+
+    <!--Calificar-->
+    <string name="img">descripcion de la imagen</string>
+    <string name="title_calificar">Calificar Preg/Resp</string>
+    <string name="opc_calificar">Opciones</string>
+    <string name="boton_calificar">No deberia aprobarse</string>
+
+    <!--Sugerir-->
+    <string name="title_sugerir">Sugerir Pregunta</string>
+    <string name="sugerir">Siguiente</string>
+
+    <!--General-->
+    <string name="texto_pregunta">PREGUNTA</string>
+    <string name="texto_respuesta">RESPUESTA</string>
+    <string name="hint_pregunta">Pregunta</string>
+    <string name="resp">Respuesta Correcta</string>
+    <string name="resp2">Respuesta Incorrecta</string>
+    <string name="resp3">Respuesta Incorrecta</string>
+    <string name="resp4">Respuesta Incorrecta</string>
 
 </resources>
