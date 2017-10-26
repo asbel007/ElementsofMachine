@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <!-- commosmoddsofok-->
+    <!-- commosmoddsofok -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,13 +26,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".Pregunta" />
-        <!--activity
+        <!--
+            activity
             android:name=".Sugerencia"
             android:label="@string/title_activity_sugerencia"
-            android:theme="@style/AppTheme.NoActionBar"></activity-->
-        <activity android:name=".Calificar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity
+        -->
+        <activity android:name=".Calificar"></activity>
+        <activity android:name=".ActividadActivity"></activity>
     </application>
 
 </manifest>
