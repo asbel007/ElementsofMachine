@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jhonar.com.elementsofmachine.Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TableLayout
+        android:layout_width="344dp"
+        android:layout_height="360dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad1"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad2"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad3"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad4"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad5"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgb_actividad6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/btn_actividad6"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorFive"
+                android:padding="10dp"
+                android:text="@string/btn_actividad"
+                android:textAlignment="textStart"
+                android:textColor="@color/textBotonPrymary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgb_actividad"
+                tools:layout_editor_absoluteY="85dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

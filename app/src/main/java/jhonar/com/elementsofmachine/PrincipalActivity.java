@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,19 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import drawable.CalificarFragment;
-import drawable.ConfiguracionFragment;
-import drawable.MainFragment;
-import drawable.SugerirFragment;
-import drawable.PerfilFragment;
-
-public class MainActivity extends AppCompatActivity
+public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_principal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -44,15 +37,22 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.contenedor, new MainFragment()).commit();
-
+        //Obtenemos una referencia a los controles de la interfaz
+        Button boton2 = (Button)findViewById(R.id.button2);
+        //Implementamos el evento “click” del botón
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(PrincipalActivity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.principal, menu);
         return true;
     }
 
@@ -92,20 +92,19 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        FragmentManager fragmentManager=getSupportFragmentManager();
+
         if (id == R.id.nav_camera) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new PerfilFragment()).commit();
+            // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new ConfiguracionFragment()).commit();
+
         } else if (id == R.id.nav_slideshow) {
-            //configurar
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new SugerirFragment()).commit();
+
         } else if (id == R.id.nav_manage) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new CalificarFragment()).commit();
+
         } else if (id == R.id.nav_share) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new MainFragment()).commit();
+
         } else if (id == R.id.nav_send) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new MainFragment()).commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
