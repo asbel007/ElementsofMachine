@@ -6,172 +6,166 @@
     android:layout_centerInParent="true"
     android:layout_centerVertical="true"
     android:layout_gravity="center"
+    android:background="#0ff"
     tools:context="drawable.CalificarFragment">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:weightSum="1">
 
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:minHeight="?attr/actionBarSize"
-                android:weightSum="1">
+                android:layout_height="match_parent"
+                android:layout_weight="1.81"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/fab_margin" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.81"
-                    android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
 
-                    <android.support.design.widget.FloatingActionButton
-                        android:id="@+id/fab"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_margin="@dimen/fab_margin" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:orientation="vertical">
+                        android:text="Calificar Pregunta"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorAccent" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/title_calificar"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                            android:textColor="#fff" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="4dp"
-                            android:background="@color/colorAccent" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:contentDescription="@string/img"
-                        android:layout_width="35dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/ic_menu_gallery" />
-
-                    <Button
-                        android:id="@+id/button10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="0dp"
-                        android:background="@android:color/holo_blue_light"
-                        android:text="@string/opc_calificar" />
-
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/colorAccent" />
                 </LinearLayout>
 
-            </android.support.v7.widget.Toolbar>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="60dp"
-                    android:text="@string/texto_pregunta" />
-
-                <EditText
-                    android:id="@+id/editText1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="19dp"
-                    android:ems="10"
-                    android:hint="@string/hint_pregunta"
-                    android:inputType="textMultiLine" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_below="@+id/textView1"
-                    android:layout_marginTop="130dp"
-                    android:text="@string/texto_respuesta" />
-
-                <FrameLayout
-                    android:id="@+id/frame1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView2"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="25dp">
-
-                    <EditText
-                        android:id="@+id/editText10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="@string/resp"
-                        android:inputType="text"
-                        android:textColorHint="@color/colorPrimary" />
-
-                    <EditText
-                        android:id="@+id/editText11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:ems="10"
-                        android:hint="@string/resp2"
-                        android:inputType="text" />
-
-                    <EditText
-                        android:id="@+id/editText12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="80dp"
-                        android:ems="10"
-                        android:hint="@string/resp3"
-                        android:inputType="text" />
-
-                    <EditText
-                        android:id="@+id/editText13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="120dp"
-                        android:ems="10"
-                        android:hint="@string/resp4"
-                        android:inputType="text" />
-
-                </FrameLayout>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_menu_gallery" />
 
                 <Button
-                    android:id="@+id/btnCalificar"
-                    android:layout_width="match_parent"
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="Opcion" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:text="Pregunta" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="Pregunta" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="130dp"
+                android:text="Respuesta" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp">
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="@color/botonPrymary"
-                    android:layout_below="@+id/frame1"
-                    android:text="@string/boton_calificar"
-                    android:textColor="@color/textBotonPrymary"
-                    android:textSize="24sp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="200dp" />
-            </RelativeLayout>
+                    android:ems="10"
+                    android:hint="Respuesta Correcta"
+                    android:inputType="text"
+                    android:textColorHint="@color/colorPrimary" />
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:ems="10"
+                    android:hint="Respuesta Incorrecta"
+                    android:inputType="text" />
 
-    </ScrollView>
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:ems="10"
+                    android:hint="Respuesta Incorrecta"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:ems="10"
+                    android:hint="Respuesta Incorrecta"
+                    android:inputType="text" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnCalificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:text="No deberia aprobarse"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
 </FrameLayout>
